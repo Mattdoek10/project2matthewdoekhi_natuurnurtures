@@ -1,0 +1,428 @@
+:root {
+    --nav-background-color: #0D6577;
+    --body-background-color: #BFFFFF;
+    --nav-color: white;
+    --text-background-color: #E6ECEC;
+    --p-color: black;
+    --h-color: #0D6577;
+    --box-shadow-color: rgb(91, 84, 84);
+    --button-color: #8CC63F;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --nav-background-color: rgb(68, 68, 68);
+        --body-background-color: #0D6577;
+        --nav-color: #feffa6;
+        --text-background-color: rgb(68, 68, 68);
+        --p-color: white;
+        --h-color: #feffa6;
+        --box-shadow-color: black;
+        --button-color: #fdff77;
+    }
+}
+
+@font-face {
+    font-family: 'kingthings';
+    src: url('../fonts/Kingthings Organica.ttf')
+}
+
+footer {
+    margin-top: 14em;
+    color: var(--p-color);
+}
+
+body {
+    background-color: var(--body-background-color);
+}
+
+header {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    margin: -7.8px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0 0.1em;
+    padding: 1em;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    color: var(--nav-color);
+    text-decoration: none;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+img {
+    position: absolute;
+    margin-left: -3.65em;
+    top: 1.2%;
+    height: 367px;
+    z-index: -1;
+}
+
+.bovenbalk {
+    position: absolute;
+    width: 376px;
+    left: 15.45%;
+    top: -13%;
+}
+
+.homebord {
+    position: absolute;
+    top: 480px;
+    left: 25%;
+}
+
+.hangendbord {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    z-index: -2;
+}
+
+.voordelen a {
+    position: absolute;
+    top: 89%;
+    left: 35%;
+    transform: rotate(-14deg);
+    text-decoration: none;
+    color: black;
+}
+
+
+.nadelen a {
+    position: absolute;
+    top: 99.5%;
+    left: 32%;
+    text-decoration: none;
+    color: black;
+}
+
+.doneer a {
+    position: absolute;
+    top: 110.5%;
+    left: 38%;
+    transform: rotate(15deg);
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    position: absolute;
+    top: 37%;
+    left: 29%;
+    font-size: 300%;
+}
+
+.wolkje {
+    position: absolute;
+    height: 13%;
+    left: 20%;
+    top: 24%;
+    z-index: -2;
+    animation: bewegen 20s linear infinite;
+}
+
+.wolkje2 {
+    position: absolute;
+    height: 20%;
+    left: 20%;
+    top: 70%;
+    z-index: -3;
+    animation: bewegen 90s linear infinite;
+}
+
+.wolkje3 {
+    position: absolute;
+    height: 8%;
+    left: 10%;
+    top: 100%;
+    z-index: -3;
+    animation: bewegen 10s linear infinite;
+}
+
+.wolkje4 {
+    position: absolute;
+    height: 8%;
+    left: 50%;
+    top: 115%;
+    z-index: -3;
+    animation: bewegen 8s linear infinite;
+}
+
+.wolkje5 {
+    position: absolute;
+    height: 15%;
+    left: 20%;
+    top: 55%;
+    z-index: -2;
+    animation: bewegen 200s linear infinite;
+}
+
+.wolkje6 {
+    position: absolute;
+    height: 30%;
+    left: 20%;
+    top: 3%;
+    z-index: -3;
+    animation: bewegen 500s linear infinite;
+}
+
+.wolkje7 {
+    position: absolute;
+    height: 30%;
+    left: 20%;
+    top: 150%;
+    z-index: -3;
+    animation: bewegen 500s linear infinite;
+}
+
+@keyframes bewegen {
+    0% {
+        transform: translateX(0%);
+    }
+
+    50% {
+        transform: translateX(190%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.hangendbord2 {
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    z-index: -2;
+    animation: swing ease-in-out 1s infinite alternate;
+}
+
+.hangendbord3 {
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    z-index: -2;
+    animation: swing ease-in-out 1s infinite alternate;
+}
+
+@keyframes swing {
+    0% {
+        transform: rotate(1deg);
+    }
+
+    100% {
+        transform: rotate(-1deg);
+    }
+}
+
+.hvoordelen {
+    position: absolute;
+    top: 40%;
+    left: 24.5%;
+    font-size: 300%;
+    animation: swingvoordelen ease-in-out 1s infinite alternate;
+}
+
+@keyframes swingvoordelen {
+    0% {
+        transform: rotate(28deg);
+    }
+
+    100% {
+        transform: rotate(26deg);
+    }
+}
+
+.hnadelen {
+    position: absolute;
+    top: 39%;
+    left: 26%;
+    font-size: 300%;
+    animation: swingnadelen ease-in-out 1s infinite alternate;
+}
+
+@keyframes swingnadelen {
+    0% {
+        transform: rotate(-23deg);
+    }
+
+    100% {
+        transform: rotate(-26deg);
+    }
+}
+
+.pvoordelen {
+    background-color: var(--text-background-color);
+    color: var(--p-color);
+    padding: 0.5em;
+    margin: 30em 1em 0 1em;
+    border-radius: 1em;
+    box-shadow: var(--box-shadow-color) 4px 4px;
+}
+
+.pvoordelen2 {
+    background-color: var(--text-background-color);
+    color: var(--p-color);
+    padding: 0.1em 8em 0.1em 0.5em;
+    margin: 5em 1em 0 1em;
+    border-radius: 1em;
+    box-shadow: var(--box-shadow-color) 4px 4px;
+}
+
+.icoonwolk {
+    position: absolute;
+    height: 6em;
+    top: 125%;
+    left: 72%;
+    z-index: 0;
+}
+
+.pvoordelen3 {
+    background-color: var(--text-background-color);
+    color: var(--p-color);
+    padding: 0.1em 8em 0.1em 0.5em;
+    margin: 5em 1em 2em 1em;
+    border-radius: 1em;
+    box-shadow: var(--box-shadow-color) 4px 4px;
+}
+
+
+.icoonwind {
+    position: absolute;
+    height: 10em;
+    top: 179%;
+    left: 57%;
+    z-index: 0;
+}
+
+.boomicoon {
+    position: absolute;
+    height: 8em;
+    top: 100%;
+    left: 20%;
+    z-index: 0;
+}
+
+h1 {
+    font-family: 'kingthings', 'Times New Roman';
+}
+
+h2 {
+    font-family: 'kingthings', 'Times New Roman';
+    color: var(--h-color);
+}
+
+.pnadelen {
+    background-color: var(--text-background-color);
+    color: var(--p-color);
+    padding: 0.5em;
+    margin: 30em 1em 0 1em;
+    border-radius: 1em;
+    box-shadow: var(--box-shadow-color) 4px 4px;
+}
+
+.pnadelen2 {
+    background-color: var(--text-background-color);
+    color: var(--p-color);
+    padding: 0.1em 0 0.1em 0.5em;
+    margin: 5em 1em 0 9em;
+    border-radius: 1em;
+    box-shadow: var(--box-shadow-color) 4px 4px;
+}
+
+.gif {
+    position: absolute;
+    top: 44.8em;
+    left: 0.5em;
+    z-index: 1;
+}
+
+.pnadelen3 {
+    background-color: var(--text-background-color);
+    color: var(--p-color);
+    padding: 0.1em 2em 11.5em 0.5em;
+    margin: 5em 3.8em 2em 1em;
+    border-radius: 1em;
+    box-shadow: var(--box-shadow-color) 4px 4px;
+}
+
+.pnadelen4 {
+    padding: 0em 2em 0.1em 0.5em;
+    margin: -12.3em 3.8em 2em 1em;
+    background-color: var(--text-background-color);
+    color: var(--p-color);
+    border-radius: 1em;
+    box-shadow: var(--box-shadow-color) 4px 4px;
+
+}
+
+.thermoicoon {
+    position: absolute;
+    top: 66em;
+    left: 20.5em;
+    z-index: 1;
+    height: 28em;
+}
+
+.hdoneer {
+    position: absolute;
+    top: 37%;
+    left: 32%;
+    font-size: 300%;
+}
+
+.pdoneer {
+    background-color: var(--text-background-color);
+    color: var(--p-color);
+    padding: 0.5em;
+    margin: 28em 1em 0 1em;
+    border-radius: 1em;
+    box-shadow: var(--box-shadow-color) 4px 4px;
+}
+
+.doneericoon {
+    position: absolute;
+    height: 13em;
+    top: 41em;
+    left: 3em;
+}
+
+.hdoneer2 a {
+    position: absolute;
+    margin: 3em 1em 0 9em;
+    background-color: var(--button-color);
+    padding: 0.7em 1em 0.7em 1em;
+    border-radius: 1em;
+    text-decoration: none;
+    color: black;
+    animation: grootklein 4s ease-in-out infinite alternate;
+}
+
+@keyframes grootklein {
+    50% {
+        transform: scale(0.8);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+.activepage {
+    background-color: #13103d;
+    border-radius: 5px;
+    padding: 5px;
+}
